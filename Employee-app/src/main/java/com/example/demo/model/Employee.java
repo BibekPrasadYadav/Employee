@@ -1,0 +1,174 @@
+package com.example.demo.model;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "employees")
+public class Employee {
+
+	@Id
+	@GeneratedValue(strategy =  GenerationType.IDENTITY)
+	private long id;
+	
+	@Column(name = "full_name")
+	private String fullName;
+	
+	@Column(name = "job_title")
+	private String jobTitle;
+	
+	@Column(name="phone")
+	private String phone;
+	
+	@Column(name = "email")
+	private String email;
+	
+	@Column(name = "address")
+	private String address;
+	
+	@Column(name = "city")
+	private String city;
+	
+	@Column(name = "state")
+	private String state;
+	
+	@Column(name = "primary_emergency_contact")
+	private String primaryEmergencyContact;
+	
+	@Column(name = "primary_phone_number")
+	private String primaryPhoneNumber;
+	
+	@Column(name = "primary_relationship")
+	private String primaryRelationship;
+	
+	@Column(name = "secondary_emergency_contact")
+	private String secondaryEmergencyContact;
+	
+	
+	@Column(name = "secondary_phone_number")
+	private String secondaryPhoneNumber;
+	
+	@Column(name = "secondary_relationship")
+	private String secondaryRelationship;
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getFullName() {
+		return fullName;
+	}
+
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
+	}
+
+	public String getJobTitle() {
+		return jobTitle;
+	}
+
+	public void setJobTitle(String jobTitle) {
+		this.jobTitle = jobTitle;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
+	public String getPrimaryEmergencyContact() {
+		return primaryEmergencyContact;
+	}
+
+	public void setPrimaryEmergencyContact(String primaryEmergencyContact) {
+		this.primaryEmergencyContact = primaryEmergencyContact;
+	}
+
+	public String getPrimaryPhoneNumber() {
+		return primaryPhoneNumber;
+	}
+
+	public void setPrimaryPhoneNumber(String primaryPhoneNumber) {
+		this.primaryPhoneNumber = primaryPhoneNumber;
+	}
+
+	public String getPrimaryRelationship() {
+		return primaryRelationship;
+	}
+
+	public void setPrimaryRelationship(String primaryRelationship) {
+		this.primaryRelationship = primaryRelationship;
+	}
+
+	public String getSecondaryEmergencyContact() {
+		return secondaryEmergencyContact;
+	}
+
+	public void setSecondaryEmergencyContact(String secondaryEmergencyContact) {
+		this.secondaryEmergencyContact = secondaryEmergencyContact;
+	}
+
+	public String getSecondaryPhoneNumber() {
+		return secondaryPhoneNumber;
+	}
+
+	public void setSecondaryPhoneNumber(String secondaryPhoneNumber) {
+		this.secondaryPhoneNumber = secondaryPhoneNumber;
+	}
+
+	public String getSecondaryRelationship() {
+		return secondaryRelationship;
+	}
+
+	public void setSecondaryRelationship(String secondaryRelationship) {
+		this.secondaryRelationship = secondaryRelationship;
+	}
+
+	
+	
+	
+	
+}
